@@ -5,4 +5,4 @@ pdf: prepare
 	@pandoc
 
 prepare:
-	@echo "Preparing 👻"
+	@echo "Preparing"
