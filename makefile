@@ -2,7 +2,11 @@ all: pdf
 
 pdf: prepare
 	@echo "Creating pdf output ..."
-	@pandoc
+	@pandoc -s thesis.md -o thesis.pdf
 
 prepare:
-	@echo "Preparing"
+	@echo "Preparing ..."
+
+publish:
+	@echo "Publishing ..."
+	./travis/publish.sh
