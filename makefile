@@ -2,7 +2,7 @@ all: pdf
 
 pdf: prepare
 	@echo "Creating pdf output ..."
-	@pandoc -s thesis.md -o thesis.pdf
+	@pandoc --latex-engine=xelatex thesis.md --output thesis.pdf
 
 prepare:
 	@echo "Preparing ..."
