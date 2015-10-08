@@ -1,6 +1,7 @@
 before_install:
   - sudo apt-get update -qq
   - sudo apt-get install -y pandoc
+  - sudo apt-get install -y texlive-full
   - sudo apt-get install -y texlive-xetex
   - chmod u+x ./travis/build.sh
   - chmod u+x ./travis/publish.sh
