@@ -19,5 +19,5 @@ env:
   - GH_PROJECT_NAME: pandoc-travis-setup
   - GIT_AUTHOR_NAME: Travis
   - GIT_AUTHOR_EMAIL: noreply@travis-ci.org
-  - RESULT_PDF_PATH=$CI_HOME/thesis.pdf
+  - RESULT_PDF_PATH=$TRAVIS_BUILD_DIR/thesis.pdf
   - TZ="Europe/Zurich"
