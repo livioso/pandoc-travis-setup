@@ -1,5 +1,5 @@
 # Lorem Ipsum Thesis
-![Image](https://raw.githubusercontent.com/livioso/pandoc-travis-setup/gh-pages/images/loremipsum.png)
+![Image](images/loremipsum.png)
 
 ## Introduction
 Lorem ipsum dolor sit amet, **consectetur adipiscing elit**. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi *id magna consequat sagittis*.
