@@ -5,19 +5,15 @@ before_install:
 - sudo apt-get install -y texlive-xetex
 - chmod u+x ./travis/build.sh
 - chmod u+x ./travis/publish.sh
-
 script: "./travis/build.sh"
-
 after_success:
 - "./travis/publish.sh"
-
 env:
   global:
-  # do: travis encrypt GH_OAUTH_TOKEN=<githubtoken> --add
-  - secure: dw8ufvNHyfG+vI4IaaKIpYMUikNb+3n3oQPp8I/pkJUhoVCj6DbvV93vtFP0OkTG/ZyZkOf7MCitC3Uj6M/octUI3jPOYF/hsC9NR2l0agDBCq/gDtHDZqksIyHEySv6TmI9TAnzUch5Fa9RMzB1U0WIlAkwDKEV5rNTDj/hLGq1UGN6HsFaIxRSXFRKbgqHoyG/OdcDBM4GgJ/qH4bJ8P8k5FvPmaH5MHNtizrPBykuZFLNzuAWuhm8eVZKua19psLPAth11V34llngVS03c8XraK9byXp3OsuHsPxmDmzcfoDLXZ2oNet++cjCXrMnb0vKARvkggU1/oZYS2VC0c5B6PJ8hHK98bJvWaCrIM+RUYF7CrwsQvaluijZKhxatuLDTSkJhVQoOpF/MLcnISY/aA9Hd//mvr4KVoqxioV8upapmjayUPJ9TZPPspk4tPpnfQZG4jtS0FUt7Jfnx4UScm+kh6T3Vd+lNZsBOJe8L/e/R71INYpnVB9yOw1UK/JsncFOT9QqFEIMh+pjYqk8qpGPfdiU2Tbs4S9FxijISNNz7aKX3Xn4vNPmhmC3+WFntyTzgAYpbpIbpeiJkbWmnqpJQ2VPod4Zu2OLTMXzCfWPqV/pznU/ycsbsFk3tONk5dLwXu3srn5TF8b6pOjSCj9jyqstmS7yGDtZ7hQ=
-  - GH_USER_NAME: livioso
+  - GH_USER_NAME: mgomersbach
   - GH_PROJECT_NAME: pandoc-travis-setup
   - GIT_AUTHOR_NAME: Travis
   - GIT_AUTHOR_EMAIL: noreply@travis-ci.org
-  - RESULT_PDF_PATH=$TRAVIS_BUILD_DIR/thesis.pdf
-  - TZ="Europe/Zurich"
+  - RESULT_PDF_PATH=$TRAVIS_BUILD_DIR/cv.pdf
+  - TZ="Europe/Amsterdam"
+  - secure: 'A3NzCLF8bXXPcHkTURD3cmLl/KO4YNobaNtQxXO1D4fflvQ0KNVSX9S/oX4F73En7i19+tMk/3emOWmT+gATzyWTbQ0WJnArsWp00X2nQ+lp9viOtVx8F8b9l3x/BYo2wpAWRNxe7nooH8w8pjg27Uk3AJK/jQKCEe7aXv18pRxZYjRheG83VjCOTXSiN37s+BbedVJytLDZ2Jy9g1jR7/1JdHs9k1APdL2NV6e+KY1+ziuf3XcP3BK564IWx7eqBEgG9v9r4KWUIRrUrgLA9snqTlT4Xe53fWOVTinl35Z+Njt+EB+D/lceRdP1Az1sHJQoxQ84gg2BZoahoK/rtgJdQ7MkTGdTonTUXU4grnQTNrFvdAvtjtteGaZ1wtSBrPwMw1/KsHJJ+2uVe92xjmxod7Hc26ED8tcKB3dlEeHb3zgqomQQIGcO58C15lA4bADDBEVF9kXi0GKYZcpk3UeOEyuCc/FxEcQt4KrDqKE95Fi3wSj4lM98+rrnaQmvpSEqAWK3VRuhlqXxOSeuUCM5PWTlkbVJL2JaxyYxHzXqJrV/K3QPjEHDoymoB7mNDtwC1okw/07Y/CD0GS2QR7Jf3240l+UEK1cC3gvE/hVjXvW1eVnWPbTATgBJe/44lEHRj++2mOscRiOaHuUGauvba1F/DYcxLEMgdhzNG3A='
